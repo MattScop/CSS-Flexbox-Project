@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    font-family: poppins, sans-serif;
+}
+
+.header-container {
+    background-color: #3232be;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-menu {
+    display: flex;
+    margin: 0 20px;
+    gap: 10px;
+}
+
+.header-menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-menu li {
+    list-style-type: none;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0 20px;
+}

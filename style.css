@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,41 +7,113 @@
 }
 
 body {
-    background-color: lightblue;
-    font-family: poppins, sans-serif;
+    background-color: #8282e4;
+    font-family: 'Poppins', sans-serif;
 }
 
-.header-container {
-    background-color: #3232be;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 30px; 
+
+}
+
+h1 {
+    margin-bottom: 15px;
 }
 
 .header {
+    background-color: #6868be;  
+}
+
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header-menu {
-    display: flex;
-    margin: 0 20px;
-    gap: 10px;
-}
-
-.header-menu a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.header-menu li {
-    list-style-type: none;
 }
 
 .logo {
     color: white;
-    font-weight: bold;
     font-size: 36px;
-    margin: 0 20px;
+    font-weight: bold;
+}
+
+.header-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-menu a:hover {
+    color: lightblue;
+}
+
+.section-one {
+    color: white;
+    background-color:#4747c7;
+}
+
+.section-one .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-one h1 {
+    font-size: 4rem;
+    line-height: 1.2em;
+}
+
+.boxes-section {
+    color: white;
+    margin: 20px 0;
+}
+
+.boxes-section .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.boxes-section .container .box {
+    background-color: #4747c7;
+    border-radius: 10px;
+    padding: 15px 25px;
+    flex: 1;
+}
+
+.box i {
+    margin-right: 10px;
+}
+
+.boxes-section .container .box h2 {
+    margin-bottom: 15px;
+}
+
+.boxes-section .container .box p {
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .section-one .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .section-one h1 {
+        margin-top: 30px;
+    }
+
+    .boxes-section .container {
+        display: block;
+        text-align: center;
+    }
+    .boxes-section .container .box {
+        margin-bottom: 20px;
+    }
 }

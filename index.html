@@ -2,34 +2,54 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Flexbox at work</title>
+        <title>Flexbox At Work</title>
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
-        <div class="header-container">
-            <div class="header">
-                <div class="logo">Flexbox</div>
-                <ul class="header-menu">
-                    <li>
-                        <a class="menu-1" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="menu-2" href="#">About</a>
-                    </li>
-                    <li>
-                        <a class="menu-3" href="#">Contacts</a>
-                    </li>
-                </ul>
+        <div class="header">
+            <div class="container">
+                    <div class="logo">Flexbox</div>
+                    <ul class="header-menu">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
             </div>
         </div>
 
-        <section class="body-section">
-            <h1>This project has been built using Flexbox.</h1>
-            <p>It is not that hard after all</p>
+        <section class="section-one">
+            <div class="container">
+                    <div class="content-box">
+                        <h1>Flexbox Is The Way!</h1>
+                        <p><em>Trying to get used to it with this project</em></p>
+                    </div>
+                    <img src="img/grid.svg" alt="grid">
+            </div>
+        </section>
 
-            <img src="img/grid.svg" alt="grid">
+        <section class="boxes-section">
+            <div class="container">
+                <div class="box one">
+                    <h2><i class="fa-brands fa-github"></i>GitHub & Commit</h2>
+                    <p>I am not going to commit often with this project as I just need to experiment with what I learnt.</p>
+                </div>
+                <div class="box two">
+                    <h2><i class="fas fa-arrows-alt"></i>Tricky Positioning</h2>
+                    <p>Getting used with the various settings is not that hard once you understand how things work.</p>
+                </div>
+                <div class="box three">
+                    <h2><i class="fas fa-mobile"></i>Responsive Design</h2>
+                    <p>I noticed that making a website mobile responsive is super easy. Just a couple of settings and that's it!</p>
+                </div>
+            </div>  
         </section>
     </body>
 </html>
